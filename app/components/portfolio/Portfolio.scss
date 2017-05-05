@@ -1,0 +1,93 @@
+@import '../../sass/Vars';
+
+.portfolio {
+    position: relative;
+
+    .imagewrapper {
+        padding: 0;
+        margin: 1rem;
+        background-color: #cccccc;
+
+        width: calc( 100% - 2rem );
+        max-height: initial;
+        line-height: 100%;
+
+        img {
+            opacity: 0;
+            -webkit-transition: opacity 500ms linear;
+            -ms-transition: opacity 500ms linear;
+            transition: opacity 500ms linear;
+            margin:0 auto;
+            display: block;
+        }
+    }
+    .text {
+        padding: 1rem;
+        margin: 0;
+        line-height: 1.5em;
+    }
+    .title {
+        display: inline-block;
+        padding: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+    }
+    .year {
+        padding: 1rem;
+        font-style: italic;
+        opacity: 0.5;
+    }
+    p {
+        margin-bottom: 1em;
+    }
+    a:link, a:visited {
+        color: #000;
+        font-weight: 600;
+    }
+    .titletext {
+        display: inline-block;
+    }
+    .next {
+        padding: 1rem;
+
+        a:link, a:visited {
+            font-weight: 400;
+            color: #333;
+        }
+        // a:hover {
+
+        // }
+
+        // @media #{$tablet} {
+        //     position: absolute;
+        //     top: 0.5rem;
+        //     right: 0;
+        //     text-align: right;
+        // }
+    }
+}
+.previousArrow {
+    display: inline-block;
+    width: calc( 50% - 2rem );
+    padding: 1rem;
+    @media #{$tablet} {
+        padding: 0 1rem;
+    }
+}
+.nextArrow {
+    display: inline-block;
+    width: calc( 50% - 2rem );
+    text-align: right;
+    padding: 1rem;
+    @media #{$tablet} {
+        padding: 0 1rem;
+    }
+}
+.arrows {
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 100%;
+    opacity: 0.5;
+}

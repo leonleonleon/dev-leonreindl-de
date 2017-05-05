@@ -1,0 +1,28 @@
+@import '../../sass/Vars';
+
+.imagewrapper {
+    margin: 1rem auto;
+    width: 18rem;
+    max-height: 10.125rem;
+    overflow: hidden;
+
+    @media #{$phonescape} {
+        width: 30rem;
+        max-height: 16.875rem;
+    }
+    @media #{$tablet}
+    {
+        width: 20rem;
+        max-height: 11.25rem;
+    }
+    @media #{$desktop}
+    {
+        width: 30rem;
+        max-height: 16.875rem;
+    }
+
+    img {
+        max-width: 100%;
+        image-rendering: auto;
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../sass/Vars';
+
+.portfolios {
+    clear: both;
+
+    .hello {
+        margin: 1rem;
+        font-size: 1.8rem;
+        @media #{$phonescape}
+        {
+            font-size: 3rem;
+        }
+    }
+}
+
+.portfolio-item {
+    width: 18rem;
+    margin: 0 auto;
+
+    opacity: 0;
+
+    -webkit-transition: opacity 500ms linear;
+    -ms-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
+
+    @media #{$phonescape}
+    {
+        width: 30rem;
+    }
+    @media #{$tablet}
+    {
+        padding: 1rem;
+        float: left;
+        width: 20rem;
+        padding-top:0;
+    }
+    @media #{$desktop}
+    {
+        width: 30rem;
+    }
+}
+
